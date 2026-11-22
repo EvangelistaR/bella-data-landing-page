@@ -33,7 +33,7 @@ export default function Header() {
     <header className={`site-header${hidden ? " is-hidden" : ""}${scrolled ? " is-scrolled" : ""}`}>
       <div className="container nav">
         <a className="brand" href="#inicio" aria-label="Bella Data, início">
-          <Image src="/logo.png" alt="Bella Data" width={1108} height={196} priority />
+          <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}/logo.png`} alt="Bella Data" width={1108} height={196} priority />
         </a>
         <nav className="nav-links" aria-label="Navegação principal">
           {links.map((l) => (

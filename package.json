@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out --nojekyll"
   },
   "dependencies": {
     "next": "^16.4.6",
@@ -16,6 +18,7 @@
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "gh-pages": "^6.3.0",
     "typescript": "^7.0.2"
   }
 }

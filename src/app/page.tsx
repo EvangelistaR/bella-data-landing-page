@@ -230,7 +230,7 @@ export default function Home() {
           <div className="footer-grid">
             <div>
               <a className="footer-brand" href="#inicio" aria-label="Bella Data, início">
-                <Image src="/logo.png" alt="Bella Data" width={1108} height={196} />
+                <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}/logo.png`} alt="Bella Data" width={1108} height={196} />
               </a>
               <p>Gestão de agendas para clínicas de estética.</p>
             </div>
