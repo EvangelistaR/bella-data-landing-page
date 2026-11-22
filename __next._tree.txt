@@ -1,0 +1,3 @@
+:HL["/bella-data-landing-page/_next/static/chunks/1w-l-0u19l0wq.css","style"]
+1:[["children",{"s":"__PAGE__","h":160}]]
+0:{"b":"ZgoT-WqMMSs2q-C844XJL","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
