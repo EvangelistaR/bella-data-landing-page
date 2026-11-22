@@ -1,0 +1,319 @@
+aluno: "Rafael Evangelista da Silva"
+data: "2026-11-22"
+link_conversa: "https://chatgpt.com/c/6b02639b-6c18-83e9-88a7-c4373867b0d9"
+
+produto:
+  nome: "Bella Data"
+  marca: "Bella Data"
+  promessa: "Organize as agendas da sua clínica de estética, evite conflitos de horários e mantenha seus pacientes informados, tudo em uma única plataforma inteligente."
+  o_que_e: >
+    Aplicação web para clínicas de estética que centraliza a gestão
+    de agendas, notificações de consultas, integração com calendários
+    dos pacientes, anamnese e consulta da agenda por WhatsApp
+    com auxílio de inteligência artificial.
+  problema: >
+    Dificuldade em acompanhar as agendas dos profissionais,
+    dependência de uma secretária para consultar e gerenciar horários,
+    demora na obtenção de informações e falta de centralização
+    do histórico de anamnese e prontuários dos pacientes.
+  diferenciais:
+    - titulo: "Gestão centralizada de agendas"
+      texto: >
+        Organiza as agendas dos profissionais em uma única plataforma,
+        facilitando o acompanhamento dos compromissos e reduzindo
+        conflitos de horários.
+    - titulo: "Notificações e integração com calendários"
+      texto: >
+        Notifica pacientes sobre consultas agendadas e permite
+        adicionar eventos aos calendários Google Agenda e Apple Calendar.
+    - titulo: "Anamnese e prontuários"
+      texto: >
+        Centraliza informações relacionadas ao histórico dos pacientes,
+        facilitando a consulta e organização dos registros.
+    - titulo: "Inteligência artificial via WhatsApp"
+      texto: >
+        Permite que profissionais consultem informações da agenda
+        por meio de conversas no WhatsApp.
+  planos:
+    - nome: "Standard"
+      preco: "R$ 110/mês"
+      descricao: "Até 5 acessos."
+    - nome: "Team"
+      preco: "R$ 180/mês"
+      descricao: "Até 8 acessos."
+    - nome: "Clinic"
+      preco: "R$ 250/mês"
+      descricao: "Até 25 acessos."
+  o_que_nao_faz: >
+    Não oferece consultas online nem emissão de documentos
+    para procedimentos invasivos.
+  vende_para: "Empresas (B2B)"
+  o_que_ja_observo: >
+    Ainda não existem clientes reais ou dados de utilização.
+    As necessidades e comportamentos apresentados na persona
+    são hipóteses que precisam ser validadas com potenciais clientes.
+
+persona:
+  icp:
+    setor: "Clínicas de estética."
+    porte: >
+      Clínicas de médio porte, com equipes de profissionais
+      e necessidade de administrar múltiplas agendas. A proprietária
+      também assume a responsabilidade pela gestão da operação,
+      sem necessariamente existir um cargo específico de gestor
+      administrativo.
+    gatilho: >
+      Crescimento da operação, aumento dos atendimentos,
+      conflitos de horários, dificuldade de comunicação com pacientes
+      ou dependência excessiva de uma secretária.
+
+  quem_usa: >
+    Proprietária, profissionais de estética e equipe administrativa
+    envolvidos na organização das agendas e informações dos pacientes.
+
+  manchete: "A proprietária que precisa cuidar dos pacientes e da operação, mas não consegue acompanhar cada compromisso sem depender da equipe."
+
+  fala: >
+    "Preciso saber o que está acontecendo na minha clínica sem
+    depender de alguém para consultar a agenda e me passar as informações."
+    [SUPOS - fala hipotética.]
+
+  dor: >
+    Dificuldade de acompanhar a agenda dos profissionais,
+    dependência de terceiros para obter informações,
+    possibilidade de conflitos de horários e dispersão dos
+    históricos dos pacientes.
+    [INFORMEI/DEDUZIU - problemas descritos na ficha do produto.]
+
+  jtbd: >
+    JTBD (Jobs To Be Done: trabalho que o cliente precisa realizar):
+    organizar a operação da clínica, acompanhar os compromissos
+    dos profissionais e garantir que os pacientes recebam informações
+    sobre seus atendimentos.
+    [DEDUZIU - baseado nos problemas e funcionalidades informados.]
+
+  oferta: >
+    Uma plataforma para centralizar agendas, organizar informações
+    dos pacientes, automatizar notificações e consultar compromissos
+    pelo WhatsApp com inteligência artificial.
+    [DEDUZIU - baseado na descrição do produto.]
+
+  caminho: >
+    Identifica dificuldades na organização da clínica, procura
+    alternativas para centralizar as agendas, compara funcionalidades
+    e custos, avalia a facilidade de utilização e considera contratar
+    uma plataforma de gestão.
+    [SUPOS - jornada ainda não validada.]
+
+  cena: >
+    Durante um dia de atendimentos, a proprietária precisa descobrir
+    rapidamente os horários disponíveis ou confirmar os compromissos
+    de diferentes profissionais. Atualmente, pode precisar interromper
+    alguém da recepção ou aguardar uma resposta. Gostaria de consultar
+    essas informações diretamente pelo WhatsApp.
+    [DEDUZIU - baseado nos problemas e funcionalidades informados.]
+
+  contradicao: "Ela quer eliminar a dependência da secretária, mas a adoção de uma nova plataforma pode exigir treinamento e participação da própria equipe."
+
+  mapa_empatia:
+    diz: >
+      "Quero acompanhar a agenda da clínica sem precisar perguntar
+      tudo para a secretária."
+      [SUPOS]
+    faz: >
+      Consulta informações com a equipe e depende de terceiros
+      para confirmar determinados horários.
+      [DEDUZIU]
+    pensa: >
+      "Será que consigo acompanhar a operação da clínica sem
+      precisar estar presente o tempo todo?"
+      [SUPOS]
+    sente: >
+      Pode sentir frustração com a falta de visibilidade da agenda
+      e a demora para obter informações.
+      [SUPOS]
+
+  retrato:
+    - dimensao: "Contexto profissional"
+      o_que_sabemos: >
+        É proprietária de uma clínica de estética de médio porte
+        e também responsável pela operação.
+      origem: "informei"
+      evidencia: >
+        Resposta autoral: em clínicas de médio porte, a pessoa
+        responsável pela operação é a proprietária, pois não há
+        gestor administrativo.
+
+    - dimensao: "Responsabilidade operacional"
+      o_que_sabemos: >
+        Participa diretamente da organização e do acompanhamento
+        das atividades da clínica.
+      origem: "informei"
+      evidencia: >
+        A proprietária assume o papel de responsável pela operação
+        na estrutura de clínica descrita pelo aluno.
+
+    - dimensao: "Dependência de terceiros"
+      o_que_sabemos: >
+        Pode depender da secretária e de outros integrantes da equipe
+        para consultar informações sobre horários e compromissos.
+      origem: "informei"
+      evidencia: >
+        A ficha descreve a necessidade de uma secretária para gerenciar
+        a agenda e a demora para obter respostas.
+
+    - dimensao: "Visibilidade da agenda"
+      o_que_sabemos: >
+        Existe dificuldade em saber qual é a agenda de cada profissional.
+      origem: "informei"
+      evidencia: >
+        Problema explicitamente apresentado na ficha do produto.
+
+    - dimensao: "Organização de informações clínicas"
+      o_que_sabemos: >
+        Existe necessidade de organizar anamneses e prontuários
+        dos pacientes.
+      origem: "informei"
+      evidencia: >
+        A organização do histórico de anamnese e prontuários foi
+        apresentada como problema que a aplicação pretende resolver.
+
+    - dimensao: "Abertura à tecnologia"
+      o_que_sabemos: >
+        Pode considerar soluções digitais para simplificar
+        a operação da clínica.
+      origem: "supos"
+      evidencia: >
+        Não existem entrevistas ou dados de clientes que comprovem
+        essa preferência.
+
+    - dimensao: "Critério de contratação"
+      o_que_sabemos: >
+        Pode avaliar o custo da ferramenta conforme a quantidade
+        de pessoas que precisam acessar a plataforma.
+      origem: "deduziu"
+      evidencia: >
+        Os planos comerciais possuem limites diferentes de acessos.
+
+    - dimensao: "Comportamento de compra"
+      o_que_sabemos: >
+        Pode procurar uma solução quando a organização manual
+        da agenda deixa de atender às necessidades da clínica.
+      origem: "supos"
+      evidencia: >
+        Não existem dados de aquisição ou entrevistas que confirmem
+        esse comportamento.
+
+    - dimensao: "Processo de decisão"
+      o_que_sabemos: >
+        A proprietária possui responsabilidade pela operação,
+        mas os usuários da plataforma podem ser outros integrantes
+        da equipe.
+      origem: "informei"
+      evidencia: >
+        Resposta autoral: quem utiliza a plataforma precisa ter
+        autonomia para gerenciar a agenda, mas nem sempre é essa
+        pessoa quem decide sobre a compra.
+
+  risco_do_retrato: >
+    A persona foi construída sem entrevistas, clientes reais ou dados
+    de utilização. Existe o risco de confundir quem sente a dor
+    operacional, quem utiliza a plataforma e quem efetivamente
+    possui autonomia e orçamento para contratar a solução.
+    Também não está comprovado se a inteligência artificial
+    via WhatsApp é um diferencial decisivo para a compra.
+
+  decisoes:
+    por_que_esta: "Em clínicas de médio porte a pessoa responsável pela operação é quem detém o papel de proprietário, pois não há gestor administrativo"
+    descartadas:
+      - quem: "Gestora administrativa da clínica"
+        por_que: "Não existe o papel de gestor administrativo."
+      - quem: "Profissional que também administra a clínica"
+        por_que: ""
+    o_que_mudou: "Percebi que quem utiliza a plataforma precisa de autonomia para gerenciar agenda, mas que nem sempre é essa pessoa quem decide sobre a compra"
+
+  hipoteses:
+    - afirmacao: >
+        A proprietária da clínica percebe a falta de visibilidade
+        das agendas como um problema relevante e estaria disposta
+        a pagar por uma solução que centralize essas informações.
+      se_cair: >
+        O posicionamento deverá considerar outro perfil como principal
+        comprador ou reposicionar a proposta de valor.
+      fonte: >
+        Problemas descritos na ficha do produto. Hipótese ainda
+        sem validação com clientes.
+      passos:
+        - "Entrevistar proprietárias de clínicas de estética."
+        - "Investigar como acompanham atualmente as agendas."
+        - "Identificar frequência e consequências dos problemas."
+        - "Investigar soluções utilizadas e disposição para pagar."
+      prazo: "7 dias"
+      confirma_se: >
+        As entrevistadas relatam dificuldades recorrentes,
+        reconhecem impacto operacional e demonstram interesse
+        em pagar por uma solução.
+      cai_se: >
+        As entrevistadas consideram o processo atual satisfatório
+        ou não reconhecem valor econômico na solução.
+
+    - afirmacao: >
+        Consultar a agenda pelo WhatsApp utilizando inteligência
+        artificial representa um diferencial relevante para a
+        proprietária da clínica.
+      se_cair: >
+        A funcionalidade deverá ser apresentada como complementar,
+        priorizando a gestão centralizada de agendas e a comunicação
+        com pacientes.
+      fonte: >
+        Funcionalidade informada na ficha do produto. Não existem
+        dados de utilização ou preferência dos clientes.
+      passos:
+        - "Apresentar um protótipo da consulta via WhatsApp."
+        - "Simular situações reais de consulta de horários."
+        - "Comparar a percepção de valor com a agenda centralizada."
+        - "Investigar se influenciaria a decisão de contratação."
+      prazo: "7 dias"
+      confirma_se: >
+        As entrevistadas identificam utilidade prática na consulta
+        via WhatsApp e consideram essa funcionalidade relevante
+        para a contratação.
+      cai_se: >
+        Preferem consultar a agenda diretamente na aplicação
+        ou não consideram a funcionalidade relevante.
+
+  antipersona:
+    criterio: >
+      Perfis sem necessidade de coordenar múltiplas agendas,
+      sem interesse em centralizar informações ou cujas necessidades
+      principais estejam fora do escopo da Bella Data.
+    perfis:
+      - quem: >
+          Profissional autônomo que administra individualmente
+          sua própria agenda e atende sem equipe.
+        por_que: >
+          Pode não perceber valor suficiente em uma plataforma
+          voltada à coordenação de múltiplos profissionais.
+          [DEDUZIU - hipótese baseada no ICP.]
+      - quem: >
+          Estabelecimento que procura exclusivamente uma ferramenta
+          de consultas online ou emissão de documentos para
+          procedimentos invasivos.
+        por_que: >
+          Essas necessidades estão fora do escopo declarado
+          da Bella Data.
+          [INFORMEI - ficha do produto.]
+
+  leitura_critica:
+    vale_manter: "Elementos que parecem coerentes"
+    e_fragil: "Hipóteses que ainda não têm evidências"
+    proximo_passo: "Entrevistar clínicas"
+
+visual:
+  cor: ""
+  imagem_capa: ""
+  imagem_persona: ""
+
+marca: {}
+anuncio: { url: "https://www.magnific.com/br/app/creation/tCZasLzmZJ" }
+landing: {}
