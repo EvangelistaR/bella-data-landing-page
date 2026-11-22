@@ -17,6 +17,11 @@
   --shadow-soft: 0 18px 55px rgba(35, 27, 72, 0.09);
   --shadow-lift: 0 22px 50px rgba(35, 27, 72, 0.18);
 
+  /* Motion */
+  --dur: 600ms;
+  --stagger: 400ms;
+  --ease: ease-in-out;
+  --lift: -6px;
 }
 
 @media (min-width: 768px) {
@@ -140,13 +145,26 @@ h3 {
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
+  transition:
+    transform var(--dur) var(--ease),
+    background var(--dur) var(--ease),
+    box-shadow var(--dur) var(--ease),
+    color var(--dur) var(--ease);
 }
 .btn:hover {
+  transform: translateY(var(--lift));
   background: var(--color-deep);
   box-shadow: var(--shadow-lift);
 }
+.btn:active {
+  transform: translateY(-2px);
+}
 .btn .arrow {
   display: inline-block;
+  transition: transform var(--dur) var(--ease);
+}
+.btn:hover .arrow {
+  transform: translateX(6px);
 }
 .btn-secondary {
   border-color: var(--color-border);
@@ -164,6 +182,25 @@ h3 {
   background: var(--color-lavender);
 }
 
+/* ---------- Scroll reveal: 600ms, stagger via --delay (múltiplos de 400ms) ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity var(--dur) var(--ease),
+    transform var(--dur) var(--ease),
+    box-shadow var(--dur) var(--ease),
+    background var(--dur) var(--ease);
+  transition-delay: var(--delay, 0ms);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Depois de revelado, o hover não deve herdar o delay */
+.reveal.is-done {
+  transition-delay: 0ms;
+}
 
 /* ---------- Cards: lift effect ---------- */
 .card {
@@ -172,10 +209,18 @@ h3 {
   border-radius: var(--radius-md);
   background: #fff;
 }
-.card:hover {
+.card.is-visible:hover {
+  transform: translateY(var(--lift));
   box-shadow: var(--shadow-lift);
 }
+.card .icon-box {
+  transition:
+    transform var(--dur) var(--ease),
+    background var(--dur) var(--ease),
+    color var(--dur) var(--ease);
+}
 .card:hover .icon-box {
+  transform: rotate(-8deg) scale(1.12);
   background: var(--color-primary);
   color: #fff;
 }
@@ -204,6 +249,9 @@ h3 {
   background: rgba(252, 250, 253, 0.72);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  transition:
+    transform var(--dur) var(--ease),
+    box-shadow var(--dur) var(--ease);
 }
 .site-header.is-hidden {
   transform: translateY(-100%);
@@ -245,6 +293,7 @@ h3 {
   font-size: 0.95rem;
   font-weight: 650;
   text-decoration: none;
+  transition: color var(--dur) var(--ease);
 }
 .nav-links a::after {
   content: "";
@@ -256,6 +305,7 @@ h3 {
   background: var(--color-primary);
   transform: scaleX(0);
   transform-origin: left;
+  transition: transform var(--dur) var(--ease);
 }
 .nav-links a:hover {
   color: var(--color-primary);
@@ -356,6 +406,9 @@ h3 {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: var(--shadow-soft);
+  transition:
+    transform var(--dur) var(--ease),
+    box-shadow var(--dur) var(--ease);
 }
 .dashboard:hover {
   box-shadow: var(--shadow-lift);
@@ -386,6 +439,7 @@ h3 {
   padding: 12px 8px;
   border-top: 1px solid #f0edf5;
   border-radius: 10px;
+  transition: background var(--dur) var(--ease);
 }
 .appointment:hover {
   background: var(--color-lavender);
@@ -529,6 +583,18 @@ h3 {
   background: #fff;
   color: var(--color-deep);
 }
+.demo-chat .bubble {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity var(--dur) var(--ease),
+    transform var(--dur) var(--ease);
+  transition-delay: var(--delay, 0ms);
+}
+.demo-chat.is-visible .bubble {
+  opacity: 1;
+  transform: translateY(0);
+}
 .demo-chat .bubble.reply {
   background: var(--color-primary);
 }
@@ -551,6 +617,7 @@ h3 {
   background: var(--color-primary);
   color: #fff;
   font-weight: 800;
+  transition: transform var(--dur) var(--ease);
 }
 .card:hover .step-number {
   transform: scale(1.18);
@@ -650,6 +717,7 @@ h3 {
   font-weight: 750;
   text-align: left;
   cursor: pointer;
+  transition: color var(--dur) var(--ease);
 }
 .faq-q:hover {
   color: var(--color-primary);
@@ -659,6 +727,7 @@ h3 {
   color: var(--color-primary);
   font-size: 1.5rem;
   line-height: 1;
+  transition: transform var(--dur) var(--ease);
 }
 .faq-item.is-open .faq-icon {
   transform: rotate(135deg);
@@ -666,6 +735,7 @@ h3 {
 .faq-panel {
   display: grid;
   grid-template-rows: 0fr;
+  transition: grid-template-rows var(--dur) var(--ease);
 }
 .faq-item.is-open .faq-panel {
   grid-template-rows: 1fr;
@@ -679,6 +749,7 @@ h3 {
   padding: 0 36px 22px 0;
   color: var(--color-text-light);
   opacity: 0;
+  transition: opacity var(--dur) var(--ease);
 }
 .faq-item.is-open .faq-panel p {
   opacity: 1;
@@ -738,6 +809,9 @@ h3 {
   background: #fff;
   color: var(--color-text);
   font: inherit;
+  transition:
+    border-color var(--dur) var(--ease),
+    box-shadow var(--dur) var(--ease);
 }
 .field input:focus,
 .field select:focus {
@@ -822,6 +896,7 @@ footer a {
 }
 .footer-links a {
   text-decoration: none;
+  transition: color var(--dur) var(--ease);
 }
 .footer-links a:hover {
   color: #fff;
@@ -834,3 +909,19 @@ footer a {
   font-size: 0.78rem;
 }
 
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    animation-duration: 0.01ms !important;
+  }
+  .reveal,
+  .demo-chat .bubble {
+    opacity: 1;
+    transform: none;
+  }
+}
